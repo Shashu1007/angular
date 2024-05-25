@@ -17,12 +17,13 @@ Here's an example of how to use the `@if` syntax in a component:
   ...
   template: `
     @if (isLoggedIn) {
-      <p>Welcome back, Friend!</p>
+      <p>Welcome back, {{name}}!</p>
     }
   `,
 })
 class AppComponent {
   isLoggedIn = true;
+  name = "YourName";
 }
 ```
 
